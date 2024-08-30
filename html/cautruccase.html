@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var t = prompt("Nhập vào một tháng của năm không nhuận:");
+        
+        function checkMonth(month) {
+            if (isNaN(month) || month < 1 || month > 12) {
+                alert("Không phải là tháng của năm");
+                return;
+            }
+            
+            switch (parseInt(month)) {
+                case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                    alert("Tháng " + month + " có 31 ngày");
+                    break;
+                case 2:
+                    alert("Tháng " + month + " có 28 ngày");
+                    break;
+                case 4: case 6: case 9: case 11:
+                    alert("Tháng " + month + " có 30 ngày");
+                    break;
+                default:
+                    alert("Không phải là tháng của năm");
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra Tam giác Vuông</title>
+    
+    <script language="javascript" type="text/javascript">
+        var a = eval(prompt("Nhập vào cạnh a:"));
+        var b = eval(prompt("Nhập vào cạnh b:"));
+        var c = eval(prompt("Nhập vào cạnh c:"));
+
+        if (a + b > c && a + c > b && b + c > a){
+            alert("Là các cạnh của tam giác");
+            if (a == b && a == c && b == c) {
+                document.writeln("Tam giác ABC là tam giác đều")
+            }else
+            if (a == b || a == c || b == c) {
+                    document.writeln("Tam giác ABC là tam giác cân")
+                } else {
+                    document.writeln("Tam giác ABC là tam giác thường")
+                }
+            } else {
+                document.writeln("Đây không phải là tam giác ")
+            }
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>
